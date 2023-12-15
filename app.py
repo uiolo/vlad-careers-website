@@ -12,7 +12,7 @@ jobs = [{
     "location": "New York"
 }, {
     "job_name": "Product Manager",
-    "salary": 110000,
+    "salary": 190000,
     "location": "Seattle"
 }]
 
