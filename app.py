@@ -1,11 +1,25 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
+
+jobs = [{
+    "job_name": "Software Engineer",
+    "salary": 100000,
+    "location": "San Francisco"
+}, {
+    "job_name": "Data Scientist",
+    "salary": 95000,
+    "location": "New York"
+}, {
+    "job_name": "Product Manager",
+    "salary": 110000,
+    "location": "Seattle"
+}]
 
 
 @app.route('/')
 def hello_page():
-  return 'hello world'
+  return render_template('home.html', jobs=jobs)
 
 
 if __name__ == '__main__':
