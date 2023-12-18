@@ -14,13 +14,15 @@
       <h2>Open positions</h2>
       <div>
         {% for job in jobs %}
-        {% include 'jobitems.html' %}
+        <row>
+          
+        </row>{% include 'jobitems.html' %}      
         {% endfor %}
       </div>
     </div>
   </div>
   <div class='col-3'>
-    <button class='btn btn-primary btn-lg'>Contact us</button
+    <a href='mailto:vladyan198@gmail.com?subject=Contact'><button class='btn btn-primary btn-lg'>Contact us</button</a>
   </div>
 </body>
 </html>

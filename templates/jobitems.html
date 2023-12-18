@@ -1,3 +1,12 @@
-<h4><div>Job: {{job.job_name}}</div></h4>
-<div>Salary: {{job.salary}}</div>
-<div>Location: {{job.location}}</div>
+<div class="container">
+  <div class="row">
+    <div class="col-9">
+      <h4><div>Job: {{job.job_name}}</div></h4>
+      <div>Salary: {{job.salary}}</div>
+      <div>Location: {{job.location}}</div>
+    </div>
+    <div class="col-3">
+      <div><a href='mailto:vladyan198@gmail.com?subject={{job.job_name}}'><button class='btn btn-primary btn-lg'>Apply</button></a></div>
+    </div>
+  </div>
+</div>
